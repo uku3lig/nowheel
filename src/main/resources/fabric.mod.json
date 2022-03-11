@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "nowheel",
+  "version": "${version}",
+  "name": "NoWheel",
+  "description": "Disables the scrolling wheel to move in your hotbar",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    "noWheel.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "*"
+  }
+}
