@@ -1,4 +1,6 @@
 {
   "text.autoconfig.nowheel.title": "NoWheel Configuration",
-  "text.autoconfig.nowheel.option.enabled": "Disable scroll wheel"
+  "text.autoconfig.nowheel.option.enabled": "Disable scroll wheel",
+  "nowheel.key": "NoWheel",
+  "nowheel.key.toggle": "Toggle scroll wheel"
 }
