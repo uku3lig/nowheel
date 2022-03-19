@@ -26,9 +26,9 @@ public class NoWheel implements ClientModInitializer {
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (toggle.wasPressed()) {
                 ConfigHolder<NoWheelConfig> holder = AutoConfig.getConfigHolder(NoWheelConfig.class);
-                boolean value = holder.getConfig().enabled;
+                boolean value = holder.getConfig().isEnabled();
                 client.player.sendMessage(new LiteralText("§fMouse Scrolling " + (value ? "§aON" : "§cOFF")), true);
-                holder.getConfig().enabled = !value;
+                holder.getConfig().setEnabled(!value);
                 holder.save();
             }
         });
