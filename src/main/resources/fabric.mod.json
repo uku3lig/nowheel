@@ -8,7 +8,7 @@
   "contact": {},
   "license": "MIT",
   "icon": "assets/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "client": [
       "net.uku3lig.nowheel.NoWheel"
@@ -21,9 +21,6 @@
     "noWheel.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.12",
-    "fabric": "*",
-    "minecraft": "*",
-    "cloth-config": "*"
+    "fabricloader": ">=0.10"
   }
 }
