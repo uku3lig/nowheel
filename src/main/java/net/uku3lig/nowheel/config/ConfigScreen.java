@@ -1,18 +1,19 @@
 package net.uku3lig.nowheel.config;
 
 import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.option.SimpleOption;
-import net.minecraft.text.Text;
+import net.minecraft.client.option.CyclingOption;
+import net.minecraft.client.option.Option;
+import net.minecraft.text.LiteralText;
 
 public class ConfigScreen extends AbstractConfigScreen {
     public ConfigScreen(Screen parent, Config config) {
-        super(parent, Text.literal("NoWheel Config"), config);
+        super(parent, new LiteralText("NoWheel Config"), config);
     }
 
     @Override
-    protected SimpleOption<?>[] getOptions() {
-        return new SimpleOption[] {
-                SimpleOption.ofBoolean("nowheel.option.enabled", config.isEnabled(), config::setEnabled)
+    protected Option[] getOptions() {
+        return new Option[] {
+                CyclingOption.create("nowheel.option.enabled", opt -> config.isEnabled(), (option, opt, value) -> config.setEnabled(value))
         };
     }
 }
