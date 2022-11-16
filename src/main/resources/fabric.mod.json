@@ -10,17 +10,15 @@
   "icon": "assets/icon.png",
   "environment": "client",
   "entrypoints": {
-    "client": [
-      "net.uku3lig.nowheel.NoWheel"
-    ],
-    "modmenu": [
-      "net.uku3lig.nowheel.config.ModMenuIntegration"
+    "ukulib": [
+      "net.uku3lig.nowheel.config.UkulibHook"
     ]
   },
   "mixins": [
     "noWheel.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.10"
+    "fabricloader": ">=0.10",
+    "ukulib": ">=0.3"
   }
 }
