@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(PlayerInventory.class)
 public class PlayerInventoryMixin {
     @Inject(at = @At("HEAD"), method = "scrollInHotbar", cancellable = true)
-    private void onHotbarScroll(double amount, CallbackInfo info) {
-        if (!NoWheel.getConfig().isEnabled()) info.cancel();
+    private void onHotbarScroll(double amount, CallbackInfo ci) {
+        if (!NoWheel.getManager().getConfig().isEnabled()) ci.cancel();
     }
 }
