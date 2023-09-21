@@ -9,7 +9,7 @@ import net.uku3lig.ukulib.config.ConfigManager;
 @Environment(EnvType.CLIENT)
 public class NoWheel {
     @Getter
-    private static final ConfigManager<NoWheelConfig> manager = ConfigManager.create(NoWheelConfig.class, "nowheel");
+    private static final ConfigManager<NoWheelConfig> manager = ConfigManager.createDefault(NoWheelConfig.class, "nowheel");
 
     private NoWheel() {}
 }

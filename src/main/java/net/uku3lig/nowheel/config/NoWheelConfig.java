@@ -4,17 +4,13 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import net.uku3lig.ukulib.config.IConfig;
+
+import java.io.Serializable;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class NoWheelConfig implements IConfig<NoWheelConfig> {
+public class NoWheelConfig implements Serializable {
     private boolean enabled;
-
-    @Override
-    public NoWheelConfig defaultConfig() {
-        return new NoWheelConfig(false);
-    }
 }
