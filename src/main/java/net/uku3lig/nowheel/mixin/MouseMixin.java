@@ -11,6 +11,6 @@ import org.spongepowered.asm.mixin.injection.At;
 public class MouseMixin {
     @WrapWithCondition(method = "onMouseScroll", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerInventory;setSelectedSlot(I)V"))
     public boolean onHotbarScroll(PlayerInventory instance, int slot) {
-        return !NoWheel.getManager().getConfig().isEnabled();
+        return NoWheel.getManager().getConfig().isEnabled();
     }
 }
