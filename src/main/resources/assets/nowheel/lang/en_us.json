@@ -1,4 +1,3 @@
 {
-  "nowheel.option.enabled": "Scroll wheel state",
-  "nowheel.key.toggle": "Toggle scroll wheel"
+  "speedrunapi.config.nowheel.option.enabled": "Scroll wheel state"
 }

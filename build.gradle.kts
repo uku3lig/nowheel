@@ -1,6 +1,5 @@
 plugins {
     id("fabric-loom") version "1.11-SNAPSHOT"
-    id("io.freefair.lombok") version "9.0.0-rc2"
 }
 
 version = "${project.property("mod_version")}+mc${project.property("minecraft_version")}"
@@ -8,7 +7,7 @@ group = project.property("maven_group") as String
 
 repositories {
     maven {
-        url = uri("https://maven.uku3lig.net/releases")
+        url = uri("https://jitpack.io")
     }
 }
 
@@ -18,7 +17,7 @@ dependencies {
     mappings("net.fabricmc:yarn:${project.property("yarn_mappings")}:v2")
     modImplementation("net.fabricmc:fabric-loader:${project.property("loader_version")}")
 
-    modApi("net.uku3lig:ukulib:${project.property("ukulib_version")}")
+    modApi("com.github.contariaa:speedrunapi:${project.property("speedrun_api_version")}")
 }
 
 base {
@@ -26,8 +25,8 @@ base {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 tasks.processResources {

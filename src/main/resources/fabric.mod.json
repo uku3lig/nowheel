@@ -4,22 +4,23 @@
   "version": "${version}",
   "name": "NoWheel",
   "description": "Disables the scrolling wheel to move in your hotbar",
-  "authors": ["uku"],
+  "authors": [
+    "uku"
+  ],
   "contact": {},
   "license": "MIT",
   "icon": "assets/icon.png",
   "environment": "client",
-  "entrypoints": {
-    "ukulib": [
-      "net.uku3lig.nowheel.config.UkulibHook"
-    ]
+  "custom": {
+    "speedrunapi": {
+      "config": "net.uku3lig.nowheel.NoWheelConfig"
+    }
   },
   "mixins": [
     "noWheel.mixins.json"
   ],
   "depends": {
-    "minecraft": ">=1.21.2",
-    "fabricloader": ">=0.16",
-    "ukulib": "^1.5.0"
+    "minecraft": "1.16.1",
+    "fabricloader": ">=0.16"
   }
 }
