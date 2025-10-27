@@ -9,7 +9,7 @@
   ],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/icon.png",
+  "icon": "assets/icon.jpg",
   "environment": "client",
   "custom": {
     "speedrunapi": {
