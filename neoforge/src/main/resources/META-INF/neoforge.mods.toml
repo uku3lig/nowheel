@@ -1,0 +1,36 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+
+[[mods]]
+modId = "nowheel"
+displayName = "NoWheel"
+version = "${version}"
+
+logoFile = "assets/nowheel/icon.png"
+authors = "uku"
+description = "Disables the scrolling wheel to move in your hotbar"
+
+[[dependencies.nowheel]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.1,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.nowheel]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1.0.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.nowheel]]
+modId = "ukulib"
+type = "required"
+versionRange = "[2.0.0,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[mixins]]
+config = "nowheel.mixins.json"

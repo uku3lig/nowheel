@@ -7,7 +7,7 @@
   "authors": ["uku"],
   "contact": {},
   "license": "MIT",
-  "icon": "assets/icon.png",
+  "icon": "assets/nowheel/icon.png",
   "environment": "client",
   "entrypoints": {
     "ukulib": [
@@ -15,7 +15,7 @@
     ]
   },
   "mixins": [
-    "noWheel.mixins.json"
+    "nowheel.mixins.json"
   ],
   "depends": {
     "minecraft": ">=26.1",
