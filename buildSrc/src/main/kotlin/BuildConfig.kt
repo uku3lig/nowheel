@@ -4,7 +4,7 @@ object BuildConfig {
     const val NEOFORGE_VERSION: String = "26.1.1.0-beta"
     const val UKULIB_VERSION: String = "2.0.0+26.1"
 
-    const val MOD_VERSION: String = "1.3.2"
+    const val MOD_VERSION: String = "1.4.0"
 
     const val MODRINTH_PROJECT_ID: String = "GNhuDBbS"
 
